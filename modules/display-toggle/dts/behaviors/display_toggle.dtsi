@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2024 ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/behaviors.h>
+
+/ {
+    behaviors {
+        display_tog: display_tog {
+            compatible = "zmk,behavior-display-toggle";
+            #binding-cells = <0>;
+            display-name = "Display Toggle";
+        };
+    };
+};
