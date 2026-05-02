@@ -1,0 +1,5 @@
+if(CONFIG_ZMK_BEHAVIOR_DISPLAY_TOGGLE)
+  if ((NOT CONFIG_ZMK_SPLIT) OR CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+    target_sources_ifdef(CONFIG_ZMK_BEHAVIOR_DISPLAY_TOGGLE app PRIVATE ${ZEPHYR_CURRENT_MODULE_DIR}/modules/display-toggle/behaviors/behavior_display_toggle.c)
+  endif()
+endif()
